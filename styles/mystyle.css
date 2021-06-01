@@ -1,0 +1,68 @@
+
+body {
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: 0;
+	transition: 0.2s linear;
+	font-family: "PT Sans";
+	color: white;
+	background-image: url('../images/earth.jpg');
+	background-size: cover;
+}
+
+
+
+.container {
+
+
+	text-align: center;
+
+}
+
+h1 {
+	font-size: 150px;
+	position: relative;
+	text-transform: uppercase;
+
+}
+
+h1 span#date {
+
+	color: #fff;
+	font-size: 50px;
+}
+
+
+
+.btn{
+	background-color: white;
+	border-radius: 30px;
+	border: none;
+	color: #ffffff;
+	padding: 15px 32px;
+	text-align: center;
+	font-size: 16px;
+	font-family: Futura;
+	text-decoration: none;
+	display: inline-block;
+	animation-name: mov-btn;
+	animation: mov-btn 4s linear infinite;
+}
+
+@keyframes mov-btn{
+	0%   {background-color:#3062b6; left:0px; top:0px;}
+	25%  {background-color:#605493; left:200px; top:0px;}
+	50%  {background-color:#834652; left:200px; top:200px;}
+	75%  {background-color:#933f3f; left:0px; top:200px;}
+	100% {background-color: #5e5494; left:0px; top:0px;}
+}
+
+.btn:hover{
+	transition: 0.2s linear;
+	padding: 18px 36px;
+	font-size: 18px;
+	animation-play-state: paused
+}
